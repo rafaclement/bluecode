@@ -2,11 +2,15 @@
     <string name="app_name">BlueCodingMovies</string>
 
     <string name="base_url">https://api.themoviedb.org/3/</string>
+    <string name="movie_api_key">3014a3a4d5749ebb03cf6fd44f96a43d</string>
+    <string name="not_implemented">Not implemented</string>
+
     <string name="base_url_posters">https://image.tmdb.org/t/p/w185_and_h278_bestv2/</string>
     <string name="tv_title_trending_movies">Movies</string>
     <string name="searchable_hint_trending_movies">Search your movie by name</string>
-    <string name="movie_api_key">3014a3a4d5749ebb03cf6fd44f96a43d</string>
 
-    <string name="not_implemented">Not implemented</string>
+    <string name="tv_title_movie_description_rating">Rating:</string>
+    <string name="tv_title_movie_description_overview">Further information: </string>
+
 
 </resources>

@@ -2,6 +2,7 @@ package com.bluecoding.movieschallenge.ui.adapters
 
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,6 +10,7 @@ import android.widget.Filter
 import android.widget.Filterable
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.bluecoding.movieschallenge.MovieDetailActivity
 import com.bluecoding.movieschallenge.R
 import com.bluecoding.movieschallenge.network.pojos.Movie
 import com.bluecoding.movieschallenge.ui.viewholders.RepoViewHolder
@@ -49,9 +51,9 @@ class MovieListAdapterPhone(private var mMovies: List<Movie>?, private val mCont
             Toast.makeText(mContext,R.string.not_implemented, Toast.LENGTH_LONG).show()
         })
         holder.parent!!.setOnClickListener(View.OnClickListener {
-//            val intentDetail = Intent(mContext, MovieDetailActivity::class.java)
-//            intentDetail.putExtra("item", movie)
-//            mContext.startActivity(intentDetail)
+            val intentDetail = Intent(mContext, MovieDetailActivity::class.java)
+            intentDetail.putExtra("movie", movie)
+            mContext.startActivity(intentDetail)
         })
         var base_url = mContext.getString(R.string.base_url_posters)
         Glide
