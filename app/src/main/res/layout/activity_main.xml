@@ -20,35 +20,38 @@
                 android:orientation="horizontal">
 
             <ImageView
-                    android:id="@+id/iv_logo_trending_repos"
+                    android:id="@+id/iv_logo_trending_movies"
                     android:layout_width="@dimen/image_title_size"
                     android:layout_height="@dimen/image_title_size"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/repos" />
+                    android:src="@drawable/ic_launcher_foreground" />
 
             <TextView
-                    android:id="@+id/tv_title_trending_repos"
+                    android:id="@+id/tv_title_trending_movies"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:text="@string/tv_title_trending_repos"
+                    android:text="@string/tv_title_trending_movies"
                     android:textSize="@dimen/title_activity" />
 
         </LinearLayout>
 
         <EditText
-                android:id="@+id/et_search_trending_repos"
+                android:id="@+id/et_search_trending_movies"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/edittext_height"
                 android:maxLength="@integer/et_search_max_length"
-                android:hint="@string/searchable_hint_trending_repos"/>
+                android:hint="@string/searchable_hint_trending_movies"/>
 
-        <android.support.v7.widget.RecyclerView
-                android:id="@+id/rv_trending_repos"
+        <ProgressBar android:id="@+id/pb_movies" android:layout_width="match_parent" android:layout_height="40dp" />
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_trending_movies"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-        </android.support.v7.widget.RecyclerView>
+        </androidx.recyclerview.widget.RecyclerView>
 
     </LinearLayout>
 
