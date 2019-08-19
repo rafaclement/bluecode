@@ -17,11 +17,10 @@ class NetworkRetrofitClient(context: Context) {
 
     init {
         val logging = HttpLoggingInterceptor()
-// set your desired log level
+
         logging.level = HttpLoggingInterceptor.Level.BODY
         val httpClient = OkHttpClient.Builder()
-// add your other interceptors …
-// add logging as last interceptor
+
         httpClient.addInterceptor(logging)
             .connectTimeout(5, TimeUnit.SECONDS)
             .writeTimeout(5, TimeUnit.SECONDS)

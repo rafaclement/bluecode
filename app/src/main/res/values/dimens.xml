@@ -4,7 +4,8 @@
     <dimen name="row_text_size">16sp</dimen>
     <dimen name="row_height">55sp</dimen>
     <dimen name="row_image">20sp</dimen>
-    <dimen name="pdng_imgs">4sp</dimen>
+    <dimen name="pdng_imgs">4dp</dimen>
+    <dimen name="pdng_main_img">30dp</dimen>
     <dimen name="edittext_height">50sp</dimen>
     <dimen name="image_title_size">30dp</dimen>
     <dimen name="small_padding">5dp</dimen>
