@@ -10,7 +10,10 @@
     <string name="searchable_hint_trending_movies">Search your movie by name</string>
 
     <string name="tv_title_movie_description_rating">Rating:</string>
-    <string name="tv_title_movie_description_overview">Further information: </string>
+    <string name="tv_title_movie_description_overview">Further information:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
