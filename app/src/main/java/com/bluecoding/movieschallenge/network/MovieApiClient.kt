@@ -13,4 +13,8 @@ interface MovieApiClient {
     @GET("discover/movie")
     fun findMovies(@Query("api_key") api_key: String, @Query("primary_release_date.gte") from : String, @Query("primary_release_date.lte") to: String, @Query("page") page: Int): Call<Page>
 
+    @Headers("Content-Type: application/json")
+    @GET("search/movie")
+    fun findMoviesByName(@Query("api_key") api_key: String, @Query("primary_release_year") year : String, @Query("page") page: Int, @Query("query") name: String): Call<Page>
+
 }
