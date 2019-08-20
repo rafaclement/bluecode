@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="title_activity">30sp</dimen>
-    <dimen name="row_text_size">16sp</dimen>
+    <dimen name="row_text_size">14sp</dimen>
     <dimen name="row_height">55sp</dimen>
     <dimen name="row_image">20sp</dimen>
     <dimen name="pdng_imgs">4dp</dimen>

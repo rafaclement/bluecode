@@ -48,7 +48,10 @@ class MovieListAdapterPhone(private var mMovies: List<Movie>?, private val mCont
         holder.movieName!!.text = movie.original_title
         holder.ratingCount!!.text = "" + movie.vote_count
         holder.favouriteButton!!.setOnClickListener(View.OnClickListener {
-            Toast.makeText(mContext,R.string.not_implemented, Toast.LENGTH_LONG).show()
+            Toast.makeText(mContext,R.string.not_implemented_favourite, Toast.LENGTH_LONG).show()
+        })
+        holder.watchLaterButton!!.setOnClickListener(View.OnClickListener {
+            Toast.makeText(mContext,R.string.not_implemented_watch_later, Toast.LENGTH_LONG).show()
         })
         holder.parent!!.setOnClickListener(View.OnClickListener {
             val intentDetail = Intent(mContext, MovieDetailActivity::class.java)

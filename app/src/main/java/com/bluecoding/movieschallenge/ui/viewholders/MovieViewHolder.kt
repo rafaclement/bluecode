@@ -13,6 +13,7 @@ class RepoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     var parent: LinearLayout? = null
     var movieBanner: ImageView? = null
     var favouriteButton: ImageView? = null
+    var watchLaterButton: ImageView? = null
     var ratingCount: TextView? = null
 
     init {
@@ -20,6 +21,7 @@ class RepoViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         movieBanner = itemView.findViewById(R.id.iv_movie_poster)
         ratingCount = itemView.findViewById(R.id.tv_movie_rating_item_list)
         favouriteButton = itemView.findViewById(R.id.iv_movie_favourite_item_list)
+        watchLaterButton = itemView.findViewById(R.id.iv_movie_watch_item_list)
 
         parent = itemView.findViewById(R.id.ll_movie_item) as LinearLayout
     }
